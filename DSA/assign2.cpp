@@ -38,7 +38,7 @@ Array::Array(Array &a)
 {
     capacity = a.capacity;
     lastInd = a.lastInd;
-    ptr = new int[capacity];
+    ptr = new int[capacity]; // we make a new memory i.e new memory allocation happens and then the values are copied.
     for (int i = 0; i <= lastInd; i++)
     {
         ptr[i] = a.ptr[i];
